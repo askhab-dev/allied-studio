@@ -774,8 +774,8 @@ export default function App() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-[#1A1A1A] rounded-2xl p-7 md:p-10 space-y-5">
-                  <FormField label="Имя" type="text" value={formData.name} onChange={v => setFormData(d => ({ ...d, name: v }))} placeholder="Ваше имя" required />
-                  <FormField label="Телефон" type="tel" value={formData.phone} onChange={v => setFormData(d => ({ ...d, phone: v }))} placeholder="+7 (000) 000-00-00" />
+                  <FormField label="Имя" type="text" value={formData.name} onChange={v => setFormData(d => ({ ...d, name: v }))} placeholder="Ваше имя" />
+                  <FormField label="Телефон" type="tel" value={formData.phone} onChange={v => setFormData(d => ({ ...d, phone: v }))} placeholder="+7 (000) 000-00-00" required />
                   <FormField label="E-mail" type="email" value={formData.email} onChange={v => setFormData(d => ({ ...d, email: v }))} placeholder="mail@example.com" />
                   <div>
                     <label className="block text-[#767670] text-sm mb-2">Кратко о проекте</label>
